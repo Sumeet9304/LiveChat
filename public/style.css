@@ -1,0 +1,137 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+ }
+
+ body{
+    display: grid;
+    place-items: center ;
+    background-color: rgb(184, 248, 184);
+ }
+
+ .title{
+    margin: 20px 0;
+ }
+
+ .main{
+    border: 8px solid darkgray ;
+    border-radius: 20px;
+    overflow: hidden;
+ }
+
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: black;
+    background-color:  rgb(154, 245, 154);
+}
+.name:hover{
+    background-color: rgb(54, 155, 54);
+}
+
+.name > span{
+    color: rgb(245, 101, 101);
+    padding-right: 1px;
+}
+
+.name-input{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(13, 59, 4, 0.877);
+    flex-grow: 1;
+    border: none;
+    margin: 2px 16px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.705);
+    width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.msg-left, .msg-right{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.msg-left{
+    border-radius: 20px 20px 20px 20px;
+    align-self: flex-start;
+    background-color: rgb(164, 248, 164);
+    box-shadow: -2px 2px 4px rgb(46, 204, 46);
+}
+
+.msg-right{
+    border-radius: 20px 20px 20px 20px;
+    align-self: flex-end;
+    background-color: rgb(118, 241, 180);
+    box-shadow: 2px 2px 4px rgb(88, 212, 140);
+}
+
+.msg-left > p > span, .msg-right > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.feedback{
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: rgb(238, 71, 71);
+    text-align: center;
+}
+
+.msg-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+}
+
+.msg-input{
+    flex-grow: 1;
+    height: 44px;
+    width: 85%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+.send-button{
+    width: 15%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.send-button span{
+    padding-left: 4px;
+    color: rgb(64, 216, 236);
+}
+
+.send-button:hover{
+    background-color: rgb(102, 100, 100);
+    color: white;
+}
+
+.client-total{
+    margin: 20px 0;
+    color: black;
+}
